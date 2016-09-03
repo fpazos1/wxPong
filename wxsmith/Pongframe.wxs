@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="PongFrame">
+		<size>480,480</size>
+		<style>wxDEFAULT_FRAME_STYLE|wxNO_FULL_REPAINT_ON_RESIZE|wxCLIP_CHILDREN</style>
+		<handler function="OnPaint" entry="EVT_PAINT" />
+		<handler function="OnEraseBackground" entry="EVT_ERASE_BACKGROUND" />
+		<object class="wxTimer" name="ID_TIMER1" variable="GameTimer" member="yes">
+			<interval>17</interval>
+			<handler function="OnTick" entry="EVT_TIMER" />
+		</object>
+	</object>
+</wxsmith>
